@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+// import Test from './components/Test';
+// import { useEffect, useState } from 'react';
 
-function App() {
+export default function App() {
+  // const [country, setCountry] = useState("");
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const response = await fetch('https://restcountries.com/v3.1/all');
+  //     const data = await response.json();
+  //     setCountry(data[0]['name']['official']);
+  //   }
+  //   fetchData();
+  // })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="text-gray-400 bg-gray-900 body-font">
+      {/* <h1>{country}</h1> */}
+      <Navbar />
+      <About />
+      <Projects />
+      <Contact />
+      {/* <Test /> */}
+    </main>
   );
-}
-
-export default App;
+};
