@@ -1,4 +1,4 @@
-import profile_pic from '../assets/images/pic.jpg';
+import profile_pic from '../assets/images/teletubby.jpg';
 
 export default function About() {
     return (
